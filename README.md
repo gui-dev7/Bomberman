@@ -25,7 +25,7 @@ CSS3 & TailwindCSS: Estilização e layout responsivo.
 JavaScript (ES6+): Lógica completa do jogo, renderização no Canvas e manipulação do DOM.
 
 🎮 Como Jogar
-Você pode jogar a versão online aqui: [Link para o Jogo Online] (substitua este link pela sua URL de deploy).
+Você pode jogar a versão online aqui: [[Link para o Jogo Online]](https://gui-dev7.github.io/Bomberman/) (substitua este link pela sua URL de deploy).
 
 Controles
 Teclado:
