@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomberman 7GUIME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-screen h-screen flex flex-col items-center justify-between p-4 gap-2">
+
+    <div id="ui-container" class="w-full max-w-3xl p-2 bg-gray-900 rounded-lg flex justify-between items-center border-2 border-gray-400 flex-shrink-0">
+        <div class="text-lg">NÍVEL: <span id="level">1</span></div>
+        <div class="text-lg">PONTOS: <span id="score">0</span></div>
+        <div id="power-ups-display" class="flex items-center space-x-4">
+            <span>💣 <span id="bombs-stat">1</span></span>
+            <span>🔥 <span id="radius-stat">2</span></span>
+        </div>
+    </div>
+
+    <div id="game-container" class="w-full max-w-3xl flex-grow relative">
+        <canvas id="gameCanvas" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></canvas>
+    </div>
+    
+    <div class="touch-controls w-full flex justify-between items-center px-4 flex-shrink-0">
+        <div class="d-pad">
+            <button id="up-btn" class="d-pad-btn up">▲</button>
+            <button id="down-btn" class="d-pad-btn down">▼</button>
+            <button id="left-btn" class="d-pad-btn left">◀</button>
+            <button id="right-btn" class="d-pad-btn right">▶</button>
+        </div>
+        <div class="action-buttons">
+            <button id="bomb-btn" class="action-btn">💣</button>
+        </div>
+    </div>
+
+    <div id="gameOver" class="hidden absolute inset-0 bg-black bg-opacity-75 flex-col items-center justify-center text-white">
+        <h2 class="text-5xl">FIM DE JOGO</h2>
+        <p class="text-2xl mt-4">PONTUAÇÃO FINAL: <span id="finalScore">0</span></p>
+        <button id="restartButton" class="mt-8 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-xl">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
